@@ -28,7 +28,7 @@ const Aave = ({ type = "linear", size = 24, color = "currentColor", className=""
           d="m8 16 4-9 4 9M8 12h4"
           stroke={color}
           strokeWidth="1.5"
-          strokeMiterimit="10"
+          strokeMiterLimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         ></path>
