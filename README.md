@@ -20,7 +20,7 @@ the features of this package include the following:
 - Lightweight, powerful and easy to use <g-emoji class="g-emoji" alias="smile" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" width="20" height="20"></g-emoji>
 
 <a href="https://react.dev/" rel="nofollow">
-<img src="https://www.cdnlogo.com/logos/r/85/react.svg">
+<img src="https://www.cdnlogo.com/logos/r/85/react.svg" width="70" height="70">
 </a>
 
 # Installation
