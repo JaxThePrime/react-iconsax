@@ -39,57 +39,24 @@ npm install react-iconsax
 
 ## Usage
 
-Global registration:
-
-```jsx
-// main.js
-import { VsxIcon, Wallet } from "react-iconsax";
-const app = createApp(App);
-// Dynamic usage of icons - Use PascalCase for iconName prop
-app.component("VsxIcon", VsxIcon);
-// Static usage of icons
-app.component("Wallet", Wallet);
-app.mount("#app");
-```
-
-```jsx
-// App.jsx
-<template>
-  // Dynamic imports - Use PascalCase for iconName prop
-  <VsxIcon :iconName="iconName" color="blue" size="50" type="linear" />
-
-  // Static imports
-  <Wallet color="blue" size="50" type="linear" />
-</template>
-
-<script>
-export default {
-  props:['iconName']
-};
-</script>
-```
-
 Local registration:
 
 ```jsx
-<template>
-  // Dynamic imports - Use PascalCase for iconName prop
-  <VsxIcon :iconName="iconName" color="blue" size="50" type="linear" />
-
-  // Static imports
-  <Wallet color="blue" size="50" type="linear" />
-</template>
-
-<script>
 import { VsxIcon, Wallet } from "react-iconsax";
-export default {
-  components: {
-    VsxIcon,
-    Wallet
-  },
-  props:['iconName']
-};
-</script>
+
+function App() {
+  return (
+    <div>
+      // Dynamic imports - Use PascalCase for iconName prop
+      <VsxIcon iconName="VolumeUp" />
+      
+      // Static imports
+      <Wallet color="blue" size="50" type="linear" />
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ## Props
