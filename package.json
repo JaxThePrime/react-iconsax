@@ -1,5 +1,5 @@
 {
-  "name": "react-iconsax",
+  "name": "react-iconsax-vite",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JaxThePrime/react-iconsax"
+    "url": "git+https://github.com/JaxThePrime/react-iconsax-vite"
   },
   "keywords": [
     "react",

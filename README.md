@@ -6,7 +6,7 @@
     A total of 6000 icons in 6 different designs | <strong>Only supported for react vite</strong>
     <br>
     <br>
-    <a href="https://react-iconsax.onrender.com"><strong> Browse icons</strong></a>
+    <a href="https://react-iconsax-vite.onrender.com"><strong> Browse icons</strong></a>
   </p>
 </div>
 
@@ -28,13 +28,13 @@ the features of this package include the following:
 - Install Yarn package
 
 ```bash
-yarn add react-iconsax
+yarn add react-iconsax-vite
 ```
 
 - Install NPM package
 
 ```bash
-npm install react-iconsax
+npm install react-iconsax-vite
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ npm install react-iconsax
 Local registration:
 
 ```jsx
-import { VsxIcon, Wallet } from "react-iconsax";
+import { VsxIcon, Wallet } from "react-iconsax-vite";
 
 function App() {
   return (
@@ -71,6 +71,6 @@ export default App;
 
 Emad Moghimi [jaxtheprime@gmail.com](jaxtheprime@gmail.com)
 
-Project Link: [https://github.com/JaxThePrime/react-iconsax](https://github.com/JaxThePrime/react-iconsax)
+Project Link: [https://github.com/JaxThePrime/react-iconsax-vite](https://github.com/JaxThePrime/react-iconsax-vite)
 
 </article >
