@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "description": "Iconsax icon pack by Vue",
+  "description": "Iconsax icon pack for react",
   "author": "Emad Moghimi <jaxtheprime@gmail.com>",
   "license": "MIT",
   "files": [
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JaxThePrime/vue-iconsax"
+    "url": "git+https://github.com/JaxThePrime/react-iconsax"
   },
   "keywords": [
-    "vue",
+    "react",
     "icons",
     "iconsax",
     "icon components",
-    "vue components"
+    "react components"
   ],
   "module": "dist/index.js",
   "scripts": {
