@@ -20,7 +20,7 @@ the features of this package include the following:
 - Lightweight, powerful and easy to use <g-emoji class="g-emoji" alias="smile" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png"><img class="emoji" alt="smile" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" width="20" height="20"></g-emoji>
 
 <a href="https://react.dev/" rel="nofollow">
-<svg width="100%" height="100%" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-3 text-link dark:text-link-dark w-24 lg:w-28 self-center text-sm me-0 flex origin-center transition-all ease-in-out"><circle cx="0" cy="0" r="2" fill="currentColor"></circle><g stroke="currentColor" stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
+<img src="https://www.cdnlogo.com/logos/r/85/react.svg">
 </a>
 
 # Installation
@@ -49,7 +49,6 @@ function App() {
     <div>
       // Dynamic imports - Use PascalCase for iconName prop
       <VsxIcon iconName="VolumeUp" />
-      
       // Static imports
       <Wallet color="blue" size="50" type="linear" />
     </div>
