@@ -1,7 +1,7 @@
 {
   "name": "react-iconsax-vite",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "description": "Iconsax icon pack for react",
   "author": "Emad Moghimi <jaxtheprime@gmail.com>",
