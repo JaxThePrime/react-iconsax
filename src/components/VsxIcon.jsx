@@ -9,18 +9,17 @@ const VsxIcon = ({
   type = "linear",
   className,
 }) => {
-
   const Icon = useMemo(
     () => React.lazy(() => import(`./Icons/${iconName}.jsx`)),
-    []
+    [iconName]
   );
 
   return (
-      <ErrorBoundary FallbackComponent={ErrorFallBack}>
-        <Suspense>
-          <Icon color={color} size={size} type={type} className={className} />
-        </Suspense>
-      </ErrorBoundary>
+    <ErrorBoundary FallbackComponent={ErrorFallBack}>
+      <Suspense>
+        <Icon color={color} size={size} type={type} className={className} />
+      </Suspense>
+    </ErrorBoundary>
   );
 };
 
