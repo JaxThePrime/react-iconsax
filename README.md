@@ -42,15 +42,13 @@ npm install react-iconsax-vite
 Local registration:
 
 ```jsx
-import { VsxIcon, Wallet } from "react-iconsax-vite";
+import { VsxIcon } from "react-iconsax-vite";
 
 function App() {
   return (
     <div>
-      // Dynamic imports - Use PascalCase for iconName prop
+      // Dynamic icon component - Use PascalCase for iconName prop
       <VsxIcon iconName="VolumeUp" />
-      // Static imports
-      <Wallet color="blue" size="50" type="linear" />
     </div>
   );
 }
