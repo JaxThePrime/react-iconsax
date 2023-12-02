@@ -6,7 +6,7 @@
     A total of 6000 icons in 6 different designs | <strong>Only supported for react vite</strong>
     <br>
     <br>
-    <a href="https://react-iconsax-vite.onrender.com"><strong> Browse icons</strong></a>
+    <a href="https://react-iconsax-vite-preview.vercel.app/"><strong> Browse icons</strong></a>
   </p>
 </div>
 
