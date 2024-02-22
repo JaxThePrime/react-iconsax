@@ -12,7 +12,9 @@ const VsxIcon = ({
     const importComponent = async () => {
       const module = await import(`./Icons/${iconName}.jsx`);
       const Icon = module.default;
-      setIcon(<Icon color={color} size={size} type={type} />);
+      setIcon(
+        <Icon color={color} size={size} type={type} className={className} />
+      );
     };
     importComponent();
   }, [iconName, size, type, className, color]);
