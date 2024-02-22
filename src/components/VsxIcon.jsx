@@ -1,7 +1,4 @@
-import React, { Suspense, memo, useMemo } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallBack from "@/components/ErrorFallBack";
-
+import { useEffect, useState } from "react";
 const VsxIcon = ({
   iconName = "",
   size = 24,
@@ -9,18 +6,18 @@ const VsxIcon = ({
   type = "linear",
   className,
 }) => {
-  const Icon = useMemo(
-    () => React.lazy(() => import(`./Icons/${iconName}.jsx`)),
-    [iconName]
-  );
+  const [Icon, setIcon] = useState(null);
 
-  return (
-    <ErrorBoundary FallbackComponent={ErrorFallBack}>
-      <Suspense>
-        <Icon color={color} size={size} type={type} className={className} />
-      </Suspense>
-    </ErrorBoundary>
-  );
+  useEffect(() => {
+    const importComponent = async () => {
+      const module = await import(`./Icons/${iconName}.jsx`);
+      const Icon = module.default;
+      setIcon(<Icon color={color} size={size} type={type} />);
+    };
+    importComponent();
+  }, [iconName, size, type, className, color]);
+
+  return Icon && Icon;
 };
 
-export default memo(VsxIcon);
+export default VsxIcon;
