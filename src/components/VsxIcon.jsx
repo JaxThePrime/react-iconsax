@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { cloneElement, useEffect, useState } from "react";
 const VsxIcon = ({
   iconName = "",
   size = 24,
   color = "currentColor",
   type = "linear",
-  className,
+  className = "",
 }) => {
   const [Icon, setIcon] = useState(null);
 
@@ -12,14 +12,13 @@ const VsxIcon = ({
     const importComponent = async () => {
       const module = await import(`./Icons/${iconName}.jsx`);
       const Icon = module.default;
-      setIcon(
-        <Icon color={color} size={size} type={type} className={className} />
-      );
+      setIcon(<Icon className={className} />);
     };
-    importComponent();
-  }, [iconName, size, type, className, color]);
 
-  return Icon && Icon;
+    importComponent();
+  }, [iconName,className]);
+
+  return Icon && cloneElement(Icon, { color, size, type, className });
 };
 
 export default VsxIcon;

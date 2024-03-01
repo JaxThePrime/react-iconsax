@@ -1,6 +1,7 @@
-import { VsxIcon } from "@/";
+import VsxIcon from "./components/VsxIcon";
+
 function App() {
-  return <VsxIcon iconName="VolumeUp" />;
+  return <VsxIcon iconName="Heart" className="heart"/>;
 }
 
 export default App;
